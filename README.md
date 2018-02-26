@@ -31,6 +31,7 @@ The NN was trained using cross entropy loss function and Adam optimizer.  Regula
 
 ### Testing
 Once the NN was trained a frozen an optimized graph of the trained network was created using the tensor flow python tool utilities freeze_graph and optimize_for_inference.  The optimized graph was then used to infer the road (or lane) boundaries using test images available from the Kitti dataset.  Figure 7 and 8 illustrate the predicted boundaries using the optimal graph for the road and lane trained NN.
+
 ![Figure 7](figures/RoadInference.png?raw=true)
 
 ![Figure 8](figures/LaneInference.png?raw=true)
